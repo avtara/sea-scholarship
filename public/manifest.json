@@ -1,9 +1,9 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "sea scholarship indonesia - Sea Group",
+  "name": "As a leading internet platform in Southeast Asia and Taiwan, Sea's mission is to better the lives of consumers and small businesses within the region",
   "icons": [
     {
-      "src": "favicon.ico",
+      "src": "favicon.ico.png",
       "sizes": "64x64 32x32 24x24 16x16",
       "type": "image/x-icon"
     },
