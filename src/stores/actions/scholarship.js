@@ -107,3 +107,39 @@ export const facultyFetchData = () => async (dispatch) => {
     dispatch(facultyHasError(e));
   }
 };
+
+export function testimoniHasError(err) {
+  return {
+    type: "TESTIMONI_HAS_ERRORED",
+    error: err
+  };
+}
+
+export function testimoniIsLoading(bool) {
+  return {
+    type: "TESTIMONI_IS_LOADING",
+    loading: bool
+  };
+}
+
+export function testimoniFetchDataSuccess(items) {
+  return {
+    type: "TESTIMONI_FETCH_DATA_SUCCESS",
+    payload: {
+      ...items
+    },
+    loading: false
+  };
+}
+
+export const testimoniFetchData = () => async (dispatch) => {
+  try {
+    const request = await axios.get(
+      `${process.env.REACT_APP_API_GARENA}_/items/sea_scholarship_testimoni?access_token=${process.env.REACT_APP_ACCESS_API_GARENA}&fields=*.*`
+    );
+    const data = request.data;
+    dispatch(testimoniFetchDataSuccess(data));
+  } catch (e) {
+    dispatch(testimoniHasError(e));
+  }
+};

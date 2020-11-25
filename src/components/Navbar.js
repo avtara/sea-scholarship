@@ -12,16 +12,16 @@ const Navbar = () => {
       <img src={logo} alt="Logo" className="logo" />
       <ul>
         <li>
-          <a href="#roadmap">home</a>
+          <a href="#">home</a>
         </li>
         <li>
-          <a href="wad">program</a>
+          <a href="#program">program</a>
         </li>
         <li>
-          <a href="wad">apply here</a>
+          <a href="#faculty-section">partner universities</a>
         </li>
         <li>
-          <a href="wad">FAQ</a>
+          <a href="#faq">FAQ</a>
         </li>
       </ul>
     </nav>

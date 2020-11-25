@@ -84,3 +84,30 @@ export function facultyPartner(state = initialState, action) {
       return state;
   }
 }
+
+export function testimoni(state = initialState, action) {
+  switch (action.type) {
+    case "TESTIMONI_HAS_ERRORED":
+      return {
+        payload: null,
+        loading: true,
+        error: action.error
+      };
+
+    case "TESTIMONI_IS_LOADING":
+      return {
+        payload: null,
+        loading: action.loading,
+        error: null
+      };
+
+    case "TESTIMONI_FETCH_DATA_SUCCESS":
+      return {
+        payload: action.payload,
+        loading: action.loading,
+        error: null
+      };
+    default:
+      return state;
+  }
+}

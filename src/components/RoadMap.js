@@ -7,7 +7,8 @@ const RoadMap = (props) => {
   useEffect(() => {
     const { getContent } = props;
     getContent();
-  }, []); // eslint-disable-next-line
+    // eslint-disable-next-line
+  }, []);
   return (
     <div id="roadmap">
       <div className="title">
@@ -26,6 +27,7 @@ const RoadMap = (props) => {
               </div>
             )}
           </li>
+          {err && <h3>{err.message}</h3>}
           <li>
             {loading ? (
               <div className="title">loading ...</div>

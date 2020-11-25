@@ -11,7 +11,7 @@ const ProgramSection = (props) => {
     // eslint-disable-next-line
   }, []);
   return (
-    <section className="program">
+    <section id="program">
       <div className="flex-container">
         <div className="title">
           <h1>Undergraduate Scholarship Program</h1>

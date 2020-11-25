@@ -32,7 +32,7 @@ const FacultySection = (props) => {
 
   console.log(payloadFaculty.data);
   return (
-    <div className="faculty-section">
+    <div id="faculty-section">
       <div className="title">
         <h1>Partner Universities</h1>
       </div>
