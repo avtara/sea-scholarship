@@ -28,6 +28,7 @@ const FacultySection = (props) => {
     const { getUniversity, getFaculty } = props;
     getUniversity();
     getFaculty();
+    // eslint-disable-next-line
   }, []);
 
   console.log(payloadFaculty.data);
@@ -57,6 +58,7 @@ const FacultySection = (props) => {
                         </li>
                       ))
                   )}
+                  {errFaculty && <h3>{errFaculty.message}</h3>}
                 </ul>
               </div>
               <div className="flex-30">
@@ -71,6 +73,7 @@ const FacultySection = (props) => {
             </div>
           ))
         )}
+        {errUniv && <h3>{errUniv.message}</h3>}
       </Slider>
     </div>
   );
