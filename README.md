@@ -2,7 +2,6 @@
 
 Demo [Sea Scholarship](https://sea-scholarship.avtara.vercel.app/).
 
-![Screenshot](https://ibb.co/T4nnmSr)
 
 ## Motivation
 
