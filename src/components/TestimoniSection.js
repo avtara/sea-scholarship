@@ -15,6 +15,7 @@ const TestimoniSection = (props) => {
   useEffect(() => {
     const { getTestimoni } = props;
     getTestimoni();
+    // eslint-disable-next-line
   }, []);
 
   return (

@@ -3,7 +3,7 @@ import graduateLogo from "../assets/images/icon-graduate.png";
 
 const HeroSection = () => {
   return (
-    <section className="hero">
+    <section id="hero">
       <div className="flex-container">
         <div className="hero-image">
           <img src={graduateLogo} alt="Logo" className="graduateLogo" />

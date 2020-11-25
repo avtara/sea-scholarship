@@ -38,6 +38,7 @@ const ProgramSection = (props) => {
               />
             </div>
           )}
+          {err && <h3>{err.message}</h3>}
         </div>
         <div className="flex-half">
           {loading ? (

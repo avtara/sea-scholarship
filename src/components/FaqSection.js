@@ -26,6 +26,7 @@ const FaqSection = (props) => {
             }}
           />
         )}
+        {err && <h3>{err.message}</h3>}
       </div>
     </section>
   );

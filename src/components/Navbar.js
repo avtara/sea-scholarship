@@ -12,7 +12,7 @@ const Navbar = () => {
       <img src={logo} alt="Logo" className="logo" />
       <ul>
         <li>
-          <a href="#">home</a>
+          <a href="#hero">home</a>
         </li>
         <li>
           <a href="#program">program</a>
